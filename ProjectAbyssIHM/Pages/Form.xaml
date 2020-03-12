@@ -1,0 +1,67 @@
+﻿<Page x:Class="ProjectAbyssIHM.Pages.Form"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjectAbyssIHM.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="Saisie des Données">
+
+    <Grid Height="800" Width="1200">
+
+        <TextBox Name="Name" HorizontalAlignment="Left" Height="31" Margin="387,29,0,0" TextWrapping="Wrap" Text="Nom" VerticalAlignment="Top" Width="451" FontSize="20" TextAlignment="Center"/>
+
+        <Label Content="Lieux" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="80,92,0,0" VerticalAlignment="Top" Width="434" FontSize="16" />
+        <Slider Name="nbLocations" HorizontalAlignment="Left" Margin="80,132,0,0" VerticalAlignment="Top" Width="434" Minimum="0" Maximum="15" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="nbLocChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0"/>
+        <ListBox Name="Locations" SelectionMode="Multiple" Margin="80,177,689,560" Visibility="Hidden">
+            <ListBoxItem>Item 1</ListBoxItem>
+            <ListBoxItem>Item 2</ListBoxItem>
+            <ListBoxItem>Item 3</ListBoxItem>
+            <ListBoxItem>Item 4</ListBoxItem>
+            <ListBoxItem>Item 5</ListBoxItem>
+        </ListBox>
+
+        <Label Content="Seigneurs" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="80,273,0,0" VerticalAlignment="Top" Width="434" FontSize="16" />
+        <Slider Name="nbLords" HorizontalAlignment="Left" Margin="80,309,0,0" VerticalAlignment="Top" Width="434" Minimum="0" Maximum="10" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="nbLordChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0"/>
+        <ListBox Name="Lords" SelectionMode="Multiple" Margin="80,348,688,385" Visibility="Hidden">
+            <ListBoxItem>Item 1</ListBoxItem>
+            <ListBoxItem>Item 2</ListBoxItem>
+            <ListBoxItem>Item 3</ListBoxItem>
+            <ListBoxItem>Item 4</ListBoxItem>
+            <ListBoxItem>Item 5</ListBoxItem>
+        </ListBox>
+
+        <Label Content="Monstres" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="80,451,0,0" VerticalAlignment="Top" Width="434" FontSize="16" />
+        <Slider Name="nbMonster" HorizontalAlignment="Left" Margin="80,491,0,0" VerticalAlignment="Top" Width="434" Minimum="0" Maximum="10" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="nbMonsterChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0"/>
+        <Slider Name="piMonster" HorizontalAlignment="Left" Margin="80,533,0,0" VerticalAlignment="Top" Width="434" Minimum="0" Maximum="5" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="piMonsterChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
+
+        <Label Content="Alliés Rouge" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="650,92,0,0" VerticalAlignment="Top" Width="434" FontSize="16" />
+        <Slider Name="nbAlliesRed" HorizontalAlignment="Left" Margin="650,132,0,0" VerticalAlignment="Top" Width="434" Minimum="0" Maximum="25" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="nbAlliesRedChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0"/>
+        <Slider Name="piAllieRed" HorizontalAlignment="Left" Margin="650,164,0,0" VerticalAlignment="Top" Width="434" Minimum="1" Maximum="5" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="piAllieRedChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
+
+        <Label Content="Alliés Bleu" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="650,190,0,0" VerticalAlignment="Top" Width="434" FontSize="16" />
+        <Slider Name="nbAlliesBlue" HorizontalAlignment="Left" Margin="650,230,0,0" VerticalAlignment="Top" Width="434" Minimum="0" Maximum="25" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="nbAlliesBlueChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0"/>
+        <Slider Name="piAllieBlue" HorizontalAlignment="Left" Margin="650,262,0,0" VerticalAlignment="Top" Width="434" Minimum="1" Maximum="5" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="piAllieBlueChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
+
+        <Label Content="Alliés Violet" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="650,288,0,0" VerticalAlignment="Top" Width="434" FontSize="16" />
+        <Slider Name="nbAlliesPurp" HorizontalAlignment="Left" Margin="650,328,0,0" VerticalAlignment="Top" Width="434" Minimum="0" Maximum="25" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="nbAlliesPurpChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0"/>
+        <Slider Name="piAlliePurp" HorizontalAlignment="Left" Margin="650,360,0,0" VerticalAlignment="Top" Width="434" Minimum="1" Maximum="5" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="piAlliePurpChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
+
+        <Label Content="Alliés Jaune" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="650,386,0,0" VerticalAlignment="Top" Width="434" FontSize="16" />
+        <Slider Name="nbAlliesYel" HorizontalAlignment="Left" Margin="650,426,0,0" VerticalAlignment="Top" Width="434" Minimum="0" Maximum="25" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="nbAlliesYelChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0"/>
+        <Slider Name="piAllieYel" HorizontalAlignment="Left" Margin="650,458,0,0" VerticalAlignment="Top" Width="434" Minimum="1" Maximum="5" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="piAllieYelChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
+
+        <Label Content="Alliés Vert" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="650,484,0,0" VerticalAlignment="Top" Width="434" FontSize="16" />
+        <Slider Name="nbAlliesGreen" HorizontalAlignment="Left" Margin="650,524,0,0" VerticalAlignment="Top" Width="434" Minimum="0" Maximum="25" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="nbAlliesGreenChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0"/>
+        <Slider Name="piAllieGreen" HorizontalAlignment="Left" Margin="650,556,0,0" VerticalAlignment="Top" Width="434" Minimum="1" Maximum="5" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" ValueChanged="piAllieGreenChanged" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
+
+        <Button HorizontalAlignment="Left" Margin="1034,653,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.5,0.5" Height="50" Click="Valid_Click" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="valid.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Résultat" HorizontalAlignment="Left" Margin="459,670,0,0" VerticalAlignment="Top" Width="325" RenderTransformOrigin="0.5,0.5" Height="33" Click="Result_Click"/>
+
+    </Grid>
+</Page>

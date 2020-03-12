@@ -1,0 +1,46 @@
+﻿<Page x:Class="ProjectAbyssIHM.Pages.Result"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjectAbyssIHM.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="Resultat">
+
+    <Grid>
+        <ListView HorizontalAlignment="Left" Height="397" Margin="135,105,0,0" VerticalAlignment="Top" Width="915">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn>
+                        <GridViewColumnHeader>
+                            Test 1    
+                        </GridViewColumnHeader>
+                        
+                    </GridViewColumn>
+
+                    <GridViewColumn>
+                        <GridViewColumnHeader>
+                            Test 2
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                    
+                    <GridViewColumn>
+                        <GridViewColumnHeader>
+                            Test 3
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                    
+                    <GridViewColumn>
+                        <GridViewColumnHeader>
+                            Test 4
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+
+        </ListView>
+
+
+    </Grid>
+</Page>
