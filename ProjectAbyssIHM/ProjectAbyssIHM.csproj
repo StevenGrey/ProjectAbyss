@@ -140,5 +140,14 @@
   <ItemGroup>
     <Folder Include="Img\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\exit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

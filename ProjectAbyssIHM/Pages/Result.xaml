@@ -9,37 +9,42 @@
       Title="Resultat">
 
     <Grid>
-        <ListView HorizontalAlignment="Left" Height="397" Margin="135,105,0,0" VerticalAlignment="Top" Width="915">
+        <ListView HorizontalAlignment="Left" Height="174" Margin="170,200,0,0" VerticalAlignment="Top" Width="856">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn>
-                        <GridViewColumnHeader>
-                            Test 1    
-                        </GridViewColumnHeader>
-                        
+                    <GridViewColumn Width="150">
+                        <GridViewColumnHeader/>
                     </GridViewColumn>
 
-                    <GridViewColumn>
+                    <GridViewColumn Width="175">
                         <GridViewColumnHeader>
-                            Test 2
+                            Joueur 1
                         </GridViewColumnHeader>
                     </GridViewColumn>
-                    
-                    <GridViewColumn>
+
+                    <GridViewColumn Width="175">
                         <GridViewColumnHeader>
-                            Test 3
+                            Joueur 2
                         </GridViewColumnHeader>
                     </GridViewColumn>
-                    
-                    <GridViewColumn>
+
+                    <GridViewColumn Width="175">
                         <GridViewColumnHeader>
-                            Test 4
+                            Joueur 3
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+
+                    <GridViewColumn Width="175">
+                        <GridViewColumnHeader>
+                            Joueur 4
                         </GridViewColumnHeader>
                     </GridViewColumn>
                 </GridView>
             </ListView.View>
 
         </ListView>
+        <Label Content="Vainqueur : " HorizontalAlignment="Left" Margin="400,497,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Céline" HorizontalAlignment="Left" Margin="650,497,0,0" VerticalAlignment="Top" FontSize="24"/>
 
 
     </Grid>

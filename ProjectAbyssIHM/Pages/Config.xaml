@@ -13,7 +13,11 @@
         <CheckBox Name="AllCheck" Content="Tout Cocher"  HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" Checked="AllChecked" Unchecked="AllUnchecked"/>
         <CheckBox Name="KrakenCheck" Content="Kraken" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top" Width="93" Checked="Kraken_Checked" Unchecked="Kraken_Unchecked"/>
         <CheckBox Name="LeviCheck" Content="Léviathan" HorizontalAlignment="Left" Margin="50,140,0,0" VerticalAlignment="Top" Checked="Levi_Checked" Unchecked="Levi_Unchecked"/>
-        <Button Content="Sauvegarder" HorizontalAlignment="Left" Margin="555,600,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="Save_Click"/>
+        <Button HorizontalAlignment="Left" Margin="555,600,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="Save_Click" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush ImageSource="save.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Page>
