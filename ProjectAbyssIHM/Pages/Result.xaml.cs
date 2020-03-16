@@ -24,5 +24,7 @@ namespace ProjectAbyssIHM.Pages
         {
             InitializeComponent();
         }
+
+
     }
 }
