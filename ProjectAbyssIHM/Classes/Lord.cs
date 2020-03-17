@@ -4,12 +4,11 @@ using System.Text;
 
 namespace ProjectAbyss
 {
-    class Lord
+    class Lord : Character
     {
         /*Attributs*/
         public string name { get; set; }
-        public string color { get; set; }
-        public int ip { get; set; }
+        
 
         /*Méthodes*/
 

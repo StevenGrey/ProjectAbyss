@@ -6,8 +6,7 @@ namespace ProjectAbyss
 {
     class Allie : Character
     {
-        /*Attributs*/
-        public string color { get; set; }
+        /*Attributs*/        
 
         /*Méthodes*/
         //Contructeurs

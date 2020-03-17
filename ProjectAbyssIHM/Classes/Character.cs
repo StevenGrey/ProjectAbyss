@@ -8,6 +8,7 @@ namespace ProjectAbyss
     {
         /*Attributs*/
         public int ip { get; protected set; }   //Points d'Influences
+        public string color { get; protected set; } //Couleur
 
         /*Méthodes*/
     }
