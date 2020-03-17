@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Text;
 
 namespace ProjectAbyss
 {
@@ -21,7 +23,42 @@ namespace ProjectAbyss
 
             /*Début*/
 
-            do
+            try
+            {
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                builder.DataSource = "DESKTOP-LDQJCOT.database.windows.net";
+                builder.UserID = "root";
+                builder.Password = "";
+                builder.InitialCatalog = "abyss";
+
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    Console.WriteLine("Test");
+
+                    StringBuilder sb = new StringBuilder();
+                    sb.Append("SELECT *");
+                    sb.Append("FROM color");
+                    String sql = sb.ToString();
+
+                    using(SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while(reader.Read())
+                            {
+                                Console.WriteLine("{0}   {1}", reader.GetString(0), reader.GetString(1));
+                            }
+                        }
+                    }
+                }
+            }
+            catch (SqlException e)
+            {
+                Console.WriteLine("Erreur lors de la connexion à la Base de Données : \n{0}", e);
+            }
+
+            /*do
             {
                 Console.WriteLine("Nombre de Joueur ?");
                 input = Console.ReadLine();
@@ -84,7 +121,7 @@ namespace ProjectAbyss
 
             DisplayResult(players);
 
-
+            */
             /*Fin*/
 
         }
