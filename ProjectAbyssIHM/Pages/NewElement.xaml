@@ -16,24 +16,30 @@
 
         <TextBox Name="Name" HorizontalAlignment="Left" Height="27" Margin="530,74,0,0" TextWrapping="Wrap" Text="Nom" VerticalAlignment="Top" Width="431" FontSize="18" TextAlignment="Center"/>
 
-        <Label Name="LabKey" Content="Clé" HorizontalAlignment="Left" Margin="685,111,0,0" VerticalAlignment="Top" Width="123" HorizontalContentAlignment="Center" FontSize="14" Visibility="Hidden"/>
-        <RadioButton Name="YesKey" Content="Oui" HorizontalAlignment="Left" Margin="685,140,0,0" VerticalAlignment="Top" Checked="YesKeys_Checked" Visibility="Hidden"/>
-        <RadioButton Name="NoKey" Content="Non" HorizontalAlignment="Left" Margin="760,140,0,0" VerticalAlignment="Top" Checked="NoKeys_Checked" Visibility="Hidden"/>
-        <Slider Name="nbKey" HorizontalAlignment="Left" Margin="530,160,0,0" VerticalAlignment="Top" Width="431" Minimum="0" Maximum="3" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
+        <Label Name="LabExt" Content="Extension" HorizontalAlignment="Left" Margin="685,110,0,0" VerticalAlignment="Top" Width="123" HorizontalContentAlignment="Center" FontSize="14"/>
+        <RadioButton Name="NoExt" GroupName="Extension" Content="Sans Extension" HorizontalAlignment="Left" Margin="590,145,0,0" VerticalAlignment="Top" />
+        <RadioButton Name="Kraken" GroupName="Extension" Content="Kraken" HorizontalAlignment="Left" Margin="720,145,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="Levi" GroupName="Extension" Content="Léviathan" HorizontalAlignment="Left" Margin="826,145,0,0" VerticalAlignment="Top"/>
 
-        <ListBox Name="Color" HorizontalAlignment="Left" Height="60" Margin="530,197,0,0" VerticalAlignment="Top" Width="431" Visibility="Hidden">
+        <Label Name="LabKey" Content="Clé" HorizontalAlignment="Left" Margin="685,200,0,0" VerticalAlignment="Top" Width="123" HorizontalContentAlignment="Center" FontSize="14" Visibility="Hidden"/>
+        <RadioButton Name="YesKey" Content="Oui" GroupName="Key" HorizontalAlignment="Left" Margin="685,230,0,0" VerticalAlignment="Top" Checked="YesKeys_Checked" Visibility="Hidden"/>
+        <RadioButton Name="NoKey" Content="Non" GroupName="Key" HorizontalAlignment="Left" Margin="760,230,0,0" VerticalAlignment="Top" Checked="NoKeys_Checked" Visibility="Hidden"/>
+        <Slider Name="nbKey" HorizontalAlignment="Left" Margin="530,260,0,0" VerticalAlignment="Top" Width="431" Minimum="0" Maximum="3" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
+
+        <ListBox Name="Color" HorizontalAlignment="Left" Height="60" Margin="530,300,0,0" VerticalAlignment="Top" Width="431" Visibility="Hidden">
             <ListBoxItem Content="Rouge"/>
             <ListBoxItem Content="Bleu"/>
             <ListBoxItem Content="Violet"/>
             <ListBoxItem Content="Jaune"/>
             <ListBoxItem Content="Vert"/>
             <ListBoxItem Content="Blanc"/>
+            <ListBoxItem Content="Gris"/>
         </ListBox>
 
-        <Label Name="LabIp" Content="Points d'Influences" HorizontalAlignment="Left" Margin="680,280,0,0" VerticalAlignment="Top" Width="156" HorizontalContentAlignment="Center" FontSize="14" Visibility="Hidden"/>
-        <Slider Name="IpLord" HorizontalAlignment="Left" Margin="530,310,0,0" VerticalAlignment="Top" Width="431" Minimum="0" Maximum="15" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
+        <Label Name="LabIp" Content="Points d'Influences" HorizontalAlignment="Left" Margin="680,400,0,0" VerticalAlignment="Top" Width="156" HorizontalContentAlignment="Center" FontSize="14" Visibility="Hidden"/>
+        <Slider Name="IpLord" HorizontalAlignment="Left" Margin="530,420,0,0" VerticalAlignment="Top" Width="431" Minimum="0" Maximum="15" TickFrequency="1" Ticks="1" TickPlacement="BottomRight" AutoToolTipPlacement="TopLeft"  AutoToolTipPrecision="0" Visibility="Hidden"/>
 
-        <TextBox Name="DescLocation" HorizontalAlignment="Left" Height="66" Margin="530,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="431" Visibility="Hidden"/>
+        <TextBox Name="DescLocation" HorizontalAlignment="Left" Height="66" Margin="530,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="431" Visibility="Hidden"/>
 
         <Button HorizontalAlignment="Left" Margin="1034,600,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.5,0.5" Height="50" BorderThickness="0" Click="Valid_Click">
             <Button.Background>
