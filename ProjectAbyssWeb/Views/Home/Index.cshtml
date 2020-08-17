@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>AbyssHome</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/mainstyles.css" />
+</head>
+
+<body>    
+    <div>
+        <p>
+            <label for="nbPlayers">Nb Joueurs</label>
+            <input type="range" min="2" max="4" name="" value="" />
+        </p>
+
+        <p>
+            @Html.ActionLink("Configuration des Joueurs", "ConfigPlayers", "Home", null, new { @class = "btn btn-default" })
+            @Html.ActionLink("Nouvel Elément", "AddElement", "Home", null, new { @class = "btn btn-default" })      
+            @Html.ActionLink("Options", "DisplaySetup", "Home", null, new { @class = "btn btn-default" })                  
+        </p>        
+    </div>
+    
+</body>
+
+</html>

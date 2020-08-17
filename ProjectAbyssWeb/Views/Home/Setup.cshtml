@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>AbyssSetup</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/mainstyles.css" />
+</head>
+
+<body>
+    <h2>Options</h2>
+
+    @Html.ActionLink("Accueil", "Index", "Home", null, new { @class = "btn btn-default" })
+
+    <div>
+        <input type="checkbox" id="all" name="all" />
+        <label for="All">Tout Cocher</label>
+
+        <input type="checkbox" id="kraken" name="kraken" />
+        <label for="Kraken">Kraken</label>
+
+        <input type="checkbox" id="leviathan" name="leviathan" value="Leviathan" />
+        <label for="Léviathan">Léviathan</label>
+    </div>
+</body>
+
+</html>
