@@ -1,0 +1,40 @@
+table {
+border: 1px solid #000000;
+border-collapse: collapse;  
+color: white;
+text-align: center;
+}
+
+td, th {
+border: 1px solid #6495ed;
+}
+
+.players {
+  margin-top: 5%;
+}
+
+.players td, th {
+  width: 25%;
+}
+
+.players input {
+  width: 20%;
+}
+
+.players select {
+  width: 40%;    
+}
+
+.players select, input {
+  color: black;
+}
+
+.allies {  
+  width: 100%;
+}
+
+.allies td, th {
+  width: 20%;
+  text-align: center;
+}
+

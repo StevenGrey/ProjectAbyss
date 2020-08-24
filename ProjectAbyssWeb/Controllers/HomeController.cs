@@ -13,14 +13,14 @@ namespace ProjectAbyssWeb.Controllers
             return View();
         }
 
-        public ActionResult ConfigPlayers()
+        public ActionResult CalculResult()
         {
-            return View();
+            return View("CalculResult");
         }
 
         public ActionResult AddElement()
         {
-            return View();
+            return View("NewElement");
         }
 
         public ActionResult DisplaySetup()
