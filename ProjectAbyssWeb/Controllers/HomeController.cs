@@ -18,9 +18,9 @@ namespace ProjectAbyssWeb.Controllers
             return View("CalculResult");
         }
 
-        public ActionResult AddElement()
+        public ActionResult AddLord()
         {
-            return View("NewElement");
+            return View("NewLord");
         }
 
         public ActionResult DisplaySetup()

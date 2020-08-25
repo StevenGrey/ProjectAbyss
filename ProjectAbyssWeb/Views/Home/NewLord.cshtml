@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Abyss - Nouveau Seigneur</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/mainstyles.css" />
+</head>
+
+<body>
+    <h2>Nouveau Seigneur</h2>
+
+    @Html.ActionLink("Accueil", "Index", "Home", null, new { @class = "btn btn-default" })
+
+    @using (Html.BeginForm("Index", "Lords", FormMethod.Post))
+    {
+        <label for="Standard">Standard</label>
+        @Html.RadioButton("game", "Standard")
+
+        <label for="Kraken">Kraken</label>
+        @Html.RadioButton("game", "Kraken")
+
+        <label for="Léviathan">Léviathan</label>
+        @Html.RadioButton("game", "Léviathan")
+
+        <input type="text" id="name" name="name" placeholder="Nom" />
+
+        <select name="">
+            <option>-</option>
+            <option>Rouge</option>
+            <option>Bleu</option>
+            <option>Violet</option>
+            <option>Jaune</option>
+            <option>Vert</option>
+        </select>
+
+        <input type="number" min="0" max="3" id="keys" name="keys" placeholder="Nb Clés" required />
+
+        <input type="number" min="0" max="15" id="pi" name="pi" placeholder="Points d'Influences" required />
+    }
+
+    <button>Valider</button>
+
+</body>
+</html>
